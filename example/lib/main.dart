@@ -56,6 +56,7 @@ class _MyAppState extends State<MyApp> {
     late List<BiometricType> availableBiometrics;
     try {
       availableBiometrics = await auth.getAvailableBiometrics();
+      print(availableBiometrics);
     } on PlatformException catch (e) {
       availableBiometrics = <BiometricType>[];
       print(e);
