@@ -25,6 +25,8 @@ android {
     compileSdkVersion 29
 
     defaultConfig {
+        namespace("io.flutter.plugins.localauth")
+
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
